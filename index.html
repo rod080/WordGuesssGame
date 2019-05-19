@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+        <p>You have 10 guesses! Guess the important world figure!")</p>
+
+    <script>
+      
+
+      var $ = function(id) {
+        return document.getElementById(id);
+      };
+      var game = [
+        " Ma Pony Huateng",
+        "Elon Musk",
+        "Tim Cook",
+        "Doug McMillon",
+        "Jack Ma",
+        "Jamie Dimon",
+        "Warren Buffett",
+        "Mark Zuckerberg*",
+        "Larry Page",
+        "Jeff Bezos",
+        "Xi Jinping",
+        "Vladimir Putin",
+        "Donald Trump",
+        "Angela Merkel",
+        "Pope Francis",
+        "Bill Gates",
+        "Mohammad Bin Salman Al Saud",
+        "Narendra Modi",
+        "Larry Page",
+        "Jerome Powell",
+        "Emmanuel Macron",
+        "Theresa May",
+        "Li Keqiang",
+        "Ali Hoseini-Khamenei",
+        "Mario Draghi",
+        "Jamie Dimon",
+        "Carlos Slim "
+      ];
+
+      for(i = 0; i < game.length; i++){
+        var choice = Math.floor(Math.random() * game.length);
+        var answer = game[choice];
+        var guess = prompt("whats you guess?");
+        if(answer == guess){
+        alert("you guessed correctly")
+         }
+         else{alert("sorry thats incorrect, try again!")
+         }
+      }
+
+      
+
+    //   var guess = prompt("whats you guess?");
+    //   if(answer == guess){
+    //    alert("you guessed correctly"
+    //   }
+
+
+      //   (var i = 0; i <game.length; i++) {
+      //     // Logs the animal at index position i to the console. This code is executed each we go through the loop.
+      //     console.log(game[i]);
+      //   }
+
+      //   var choice = Math.floor(Math.random() * 10);
+      //   var answer = choice;
+      //   var guess = prompt("whats you guess?");
+
+      //   for (i = 0; i < 10; i++) {
+      //     guess = prompt("what's your guess?");
+      //     if (answer == guess) {
+      //       alert("you guessed correctly!");
+      //       break;
+      //     } else {
+      //       guess = prompt("sorry try again");
+      //     }
+      //   }
+
+      // var myLength = answer.length;
+      // var display = [myLength];
+      // var win = myLength;
+      // var letters = answer.split('');
+      // var attemptsLeft = 10
+      // var output = "";
+      // var userLetter = "";
+
+      // alert(answer);
+    </script>
+  </body>
+</html>
